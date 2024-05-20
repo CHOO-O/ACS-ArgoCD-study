@@ -3,11 +3,13 @@ kind: Deployment
 metadata:
   name: devweb-deployment
   namespace: argocd
+  labels:
+    test: helloargo
 spec:
   selector:
     matchLabels:
       app: my-devweb
-  replicas: 5
+  replicas: 3
   template:
     metadata:
       labels:
