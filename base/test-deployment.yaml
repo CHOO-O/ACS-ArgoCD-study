@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deploy-test
+  name: deploy-test-namechange
   namespace: default
 spec:
-  replicas: 7
+  replicas: 3
   strategy:
     type: RollingUpdate
     rollingUpdate:
